@@ -8,16 +8,6 @@
 #include <cstdio>
 using namespace std;
 
-int main(){
-    puts("Hello, World! vignesh");
-    puts("This is my first program in C++");
-    return 0;
-}
-
-// this is a comment
-/*
-this is a multiline comment 
-*/
 void printMessage() {
     puts("This is a simple message from a function.");
 }
@@ -25,3 +15,18 @@ void printMessage() {
 char characters(){
     return 'v';
 }
+
+int main(){
+    puts("Hello, World! vignesh");
+    puts("This is my first program in C++");
+    printMessage();
+    characters();
+    return 0;
+}
+
+// this is a comment
+/*
+this is a multiline comment 
+*/
+
+

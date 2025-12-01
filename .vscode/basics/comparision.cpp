@@ -8,6 +8,7 @@ int main(){
     cout << (x==y) << endl;
     auto m = 10;
     auto n = 15;
+ 
     cout << (m<n && n==m) << endl;
     
     return 0;

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdint>
 using namespace std;
 
 int main()
@@ -34,5 +35,18 @@ int main()
         }
     }
     cout << largest << endl;
+
+    // optimal method
+        // int smallest = integer_array[0];
+        // int largest  = integer_array[0];
+
+        // for (int i = 1; i < 4; ++i) {
+        //     if (integer_array[i] < smallest) smallest = integer_array[i];
+        //     if (integer_array[i] > largest)  largest  = integer_array[i];
+        // }
+
+        // cout << smallest << '\n';
+        // cout << largest  << '\n';
     return 0;
+
 }
