@@ -12,7 +12,7 @@ using namespace std;
 int main() {
    string my_color;
    cout << "Enter your favourite color: ";
-   getline(cin,my_color);
+   cin >> my_color;
    cout << "Hey, " << my_color << " is a great color!" << endl;
    return 0;
 }

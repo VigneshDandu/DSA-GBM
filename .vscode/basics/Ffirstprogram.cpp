@@ -8,8 +8,12 @@
 #include <cstdio>
 using namespace std;
 
-void printMessage() {
-    puts("This is a simple message from a function.");
+const char* printMessage() {
+    return "This is a simple message from a function.";
+}
+
+void printMessageVoid() {
+    puts("This function does not return anything.");
 }
 
 char characters(){
@@ -19,8 +23,10 @@ char characters(){
 int main(){
     puts("Hello, World! vignesh");
     puts("This is my first program in C++");
-    printMessage();
-    characters();
+    puts(printMessage()); //we call the printMessage function and print its return value using puts
+    printMessageVoid(); //we call the printMessageVoid function which does not return anything, it will print its message directly
+    putchar(characters()); //we use putchar to print a single character returned by the characters function
+    puts("\nEnd of program.");
     return 0;
 }
 

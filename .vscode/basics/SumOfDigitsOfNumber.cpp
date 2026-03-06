@@ -9,6 +9,9 @@ int SumOfDigits(int n){
     return sum;
 }
 int main (){
-    cout<< SumOfDigits(1234) <<endl;
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    cout<< SumOfDigits(n) <<endl;
     return 0;
 }

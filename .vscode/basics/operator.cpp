@@ -13,5 +13,12 @@ int main(){
     cout << --x << endl;       // pre-decrement: x becomes 1, prints 1
     cout << x++ << endl;       // post-increment: prints 1, then x becomes 2
     cout << x-- << endl;       // post-decrement: prints 2, then x becomes 1
+
+    int cat=14;
+    double dog= double(cat);  // cat is converted to double (14.0)
+    double pig=cat;
+    cout << cat << endl;      // prints 14
+    cout << dog << endl;      // prints 14 as double
+    cout << pig << endl;      // prints 14 as double
     return 0;
 }
