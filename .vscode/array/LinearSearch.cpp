@@ -1,24 +1,23 @@
 #include<iostream>
 using namespace std;
-int main(){
 
-    int linearsearch[5] = {10, 20, 30, 40, 50};
-    int target = 30;
-    int size = sizeof(linearsearch) / sizeof(linearsearch[0]);
-    int foundIndex = -1;
-
+void linearSearch(int arr[], int size, int target) {
     for (int i = 0; i < size; i++) {
-        if (linearsearch[i] == target) {
-            foundIndex = i;
-            break;
+        if (arr[i] == target) {
+            cout << "Element found at index: " << i << endl;
+            return;
         }
     }
+    cout << "Element not found" << endl;
+}
 
-    if (foundIndex != -1) {
-        cout << "Target found at index: " << foundIndex << endl;
-    } else {
-        cout << "Target not found" << endl;
-    }
+
+int main() {
+    int array[] = {2, 4, 6, 8, 10, 12};
+    int size = sizeof(array) / sizeof(array[0]);
+    int target = 8;
+
+    linearSearch(array, size, target);
 
     return 0;
 }
