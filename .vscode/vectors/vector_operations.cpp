@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-    vector<int> vec; //initoally empty vector
+    vector<int> vec; //initially empty vector
    // cout <<vec[0]<<endl; //undefined behavior: gives segmentation fault
     vec.push_back(10);
     vec.push_back(20);
